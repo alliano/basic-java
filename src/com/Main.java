@@ -610,50 +610,76 @@ import java.util.Arrays;
     // }
 // }
 
-import java.util.Arrays;
-public class Main {
+// import java.util.Arrays;
+// public class Main {
     
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        int[][] matrix_a = { { 1, 2, 3, 4,5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
-        int[][] matrix_b = { { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
-        printArrayMultid(matrix_a);
-        printArrayMultid(matrix_b);
+//         int[][] matrix_a = { { 1, 2, 3, 4,5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
+//         int[][] matrix_b = { { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
+//         printArrayMultid(matrix_a);
+//         printArrayMultid(matrix_b);
 
-        // System.out.println( Arrays.deepToString(resultArrMultid));
-        printArrayMultid(calculateArrMultid(matrix_a, matrix_b));
+//         // System.out.println( Arrays.deepToString(resultArrMultid));
+//         printArrayMultid(calculateArrMultid(matrix_a, matrix_b));
         
-    }
+//     }
     
-    private static int[][] calculateArrMultid(int[][] Array1 ,int[][] array2) {
-        int[][] resultArrMultid = new int[Array1.length][Array1[0].length];
-        System.out.println("RESULT  ARRAY/MATRIX OF CALCULATE 2 ARRAY MULTI DIMENCY");
-        if (Array1.length == array2.length && Array1[0].length == array2[0].length) {
-            for (int i = 0; i < Array1.length; i++) {
-                for (int j = 0; j < Array1[0].length; j++) {
-                    resultArrMultid[i][j] = (Array1[i][j] + array2[i][j]);
-                }
-            }
-        } else {
-            System.out.println("baris atau collomb tidak sama");
-        }
-        return resultArrMultid;
-    }
-    private static void printArrayMultid(int[][] Array1) {
-        int baris = Array1.length;
-        int collumb = Array1[0].length;
-        for (int i = 0; i < baris; i++) {
-            System.out.print("[");
-            for (int j = 0; j < collumb; j++) {
-                System.out.print(Array1[i][j]);
-                if (j < (collumb - 1)) {
-                    System.out.print(",");
-                } else {
-                    System.out.print("]");
-                }
-            }
-            System.out.println("\n");
-        }
-        System.out.println("================\n");
-    }
-}
+//     private static int[][] calculateArrMultid(int[][] Array1 ,int[][] array2) {
+//         int[][] resultArrMultid = new int[Array1.length][Array1[0].length];
+//         System.out.println("RESULT  ARRAY/MATRIX OF CALCULATE 2 ARRAY MULTI DIMENCY");
+//         if (Array1.length == array2.length && Array1[0].length == array2[0].length) {
+//             for (int i = 0; i < Array1.length; i++) {
+//                 for (int j = 0; j < Array1[0].length; j++) {
+//                     resultArrMultid[i][j] = (Array1[i][j] + array2[i][j]);
+//                 }
+//             }
+//         } else {
+//             System.out.println("baris atau collomb tidak sama");
+//         }
+//         return resultArrMultid;
+//     }
+//     private static void printArrayMultid(int[][] Array1) {
+//         int baris = Array1.length;
+//         int collumb = Array1[0].length;
+//         for (int i = 0; i < baris; i++) {
+//             System.out.print("[");
+//             for (int j = 0; j < collumb; j++) {
+//                 System.out.print(Array1[i][j]);
+//                 if (j < (collumb - 1)) {
+//                     System.out.print(",");
+//                 } else {
+//                     System.out.print("]");
+//                 }
+//             }
+//             System.out.println("\n");
+//         }
+//         System.out.println("================\n");
+//     }
+// }
+
+
+
+
+// import java.lang.StringBuilder;
+
+// public class Main {
+//     public static void main(String[] args) {
+//         StringBuilder datastr = new StringBuilder("jamcomk");
+
+//         print(datastr);
+//         datastr.insert(5, " komtolodon");
+//         System.out.println(datastr);
+//         datastr.delete(6, 13);
+//         System.out.println(datastr);
+
+//     }
+
+//     private static void print(StringBuilder dataStrBuilder) {
+//         System.out.println("data => " + dataStrBuilder);
+//         System.out.println("panjang => " + dataStrBuilder.length());
+//         System.out.println("data => " + dataStrBuilder.capacity());
+//         int addresbuilder = System.identityHashCode(dataStrBuilder);
+//         System.out.println("addres => " + Integer.toHexString(addresbuilder) );
+//     }
+// }
