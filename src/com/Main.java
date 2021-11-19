@@ -4,6 +4,8 @@ import java.lang.reflect.Array;
 import java.text.BreakIterator;
 import java.util.Arrays;
 
+import javax.sql.rowset.spi.SyncFactory;
+
 // import java.util.Scanner;
 
 // public class Main {
@@ -683,3 +685,53 @@ import java.util.Arrays;
 //         System.out.println("addres => " + Integer.toHexString(addresbuilder) );
 //     }
 // }
+
+// format string
+
+public class Main {
+    public static void main(String[] args) {
+        String name = "alliano";
+        int age = 18;
+        System.out.printf("my name is %s my age is %d\n", name, age);
+
+        
+        // confersion f=> floating point s=> string d=> integer b=> bolean
+        // struktur format ==>> %[argumrny_index$] [flags] [width] [.precision]confersion
+        
+        // [argument_inmdex$]
+
+        System.out.println("\n [argument_index$]");
+
+        System.out.printf("%1$s kamu ganteng kali yak:v nama mu %1$s\n", name);
+        
+        System.out.println("\n[flags]\n");
+        int a = 3;
+        int b = 7;
+        int result = (a * b);
+        System.out.printf(" %d *  %d = %+d\n",a,b,result);
+        System.out.printf(" %d *  %d = %d\n", a, b, result);
+        
+        System.out.println("[width]");
+        int c = 10000;
+        System.out.println("INTEGER");
+        System.out.printf("%d\n",c);
+        System.out.printf("%-5d\n",c); //flags - artinya reta kiri
+        System.out.printf("%+5d\n", c);//flags akan mengambil slot dari string literal
+        System.out.printf("%+-5d\n", c);//flags bida di gabungkan
+        System.out.printf("%10d\n", c);//akan membuat space di depanya
+        System.out.printf("%010d\n", c);//flags akan di tambahkan  leading "0" 
+        int a1 = 1000000000;
+        System.out.printf("%-,15d\n", a1);//menandakan delimiter per seribu
+        System.out.printf("\nFLOATING TO POINT\n");
+        float ac1 = 100.54f;
+        System.out.printf("%10f\n", ac1);//floating point akan mengambil width
+        
+
+        // exp
+        String nama = "allia";
+        float ipk = 10.55555f;
+        // save format ke dalam setring
+        String info = String.format("\n nama: %s ,ipk %2$+5.2f \n", nama, ipk);
+        System.out.printf(info);
+    }
+}
