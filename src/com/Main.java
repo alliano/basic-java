@@ -4,6 +4,9 @@ package com;
 
 
 
+import java.io.BufferedInputStream;
+import java.io.ByteArrayInputStream;
+
 // import java.lang.reflect.Array;
 // import java.text.BreakIterator;
 // import java.util.Arrays;
@@ -840,44 +843,89 @@ package com;
 // }
 
 
+// import java.io.FileInputStream;
+// import java.io.FileOutputStream;
+// import java.io.IOException;
+
+// public class Main {
+//     public static void main(String[] args) throws IOException {
+//         FileInputStream fleInput = null;
+//         FileOutputStream fileOutput = null;
+//         //open the file
+//         fleInput = new FileInputStream("data.txt");
+//         // read the file
+//         int data = fleInput.read();
+//         while (data != -1) {
+//             System.out.println((char) data);
+//             data = fleInput.read();
+//         }
+//         // close file
+//         fleInput.close();
+
+//         // menulis file;
+//         try{
+//             fleInput = new FileInputStream("data.txt");//membaca file data.txt
+//             fileOutput = new FileOutputStream("data2.txt");//memn=buat file baru
+
+//             // proses penulisan file
+//             int buffer = fleInput.read();
+
+//             while (buffer != -1) {
+//                 fileOutput.write(buffer);
+//                 buffer = fleInput.read();
+//             }
+//         } finally {
+//             if (fileOutput != null && fleInput != null) {
+//                 fileOutput.close();
+//                 fleInput.close();
+//             }
+//         }
+
+
+//     }
+// }
+
+
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
+import java.security.DrbgParameters.Reseed;
+
+
+
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        FileInputStream fleInput = null;
-        FileOutputStream fileOutput = null;
-        //open the file
-        fleInput = new FileInputStream("data.txt");
-        // read the file
-        int data = fleInput.read();
-        while (data != -1) {
-            System.out.println((char) data);
-            data = fleInput.read();
-        }
-        // close file
-        fleInput.close();
-
-        // menulis file;
-        try{
-            fleInput = new FileInputStream("data.txt");//membaca file data.txt
-            fileOutput = new FileOutputStream("data2.txt");//memn=buat file baru
-
-            // proses penulisan file
-            int buffer = fleInput.read();
-
-            while (buffer != -1) {
-                fileOutput.write(buffer);
-                buffer = fleInput.read();
-            }
-        } finally {
-            if (fileOutput != null || fleInput != null) {
-                fileOutput.close();
-                fleInput.close();
-            }
-        }
+    public static void main(String[] args) throws IOException{
+        long timeStart, timeFinish;
+        FileInputStream fileInput = new FileInputStream("data.txt");
+        // read from the file 
+        System.out.println(fileInput.available());//memnghitung ada berapa banyak kaarankter pada suatu file
 
 
+        System.out.println("membaca dengan FILEINPUTSTREAM\n");
+        // calculate time read
+        timeStart = System.nanoTime();
+        System.out.println(fileInput.readAllBytes());
+        timeFinish = System.nanoTime();
+        System.err.println("waktu : " + (timeFinish - timeStart) + "\n");
+        fileInput.close();
+
+        // read from memory
+        System.out.println("membaca dari MEmory\n");
+        FileInputStream inputfile2 = new FileInputStream("data.txt");
+        BufferedInputStream buffer = new BufferedInputStream(inputfile2);
+
+        buffer.mark(200);
+        // calculate times of read
+        timeStart = System.nanoTime();
+        System.out.println(buffer.readAllBytes());
+        timeFinish = System.nanoTime();
+        System.out.println("waktu : " + (timeFinish - timeStart));
+
+
+        // try reead
+        buffer.reset();
+        byte[] data = buffer.readAllBytes();
+        String dataString = new String(data);
+        System.out.println(dataString);
     }
 }
