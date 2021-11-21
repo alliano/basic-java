@@ -4,9 +4,6 @@ package com;
 
 
 
-import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
-
 // import java.lang.reflect.Array;
 // import java.text.BreakIterator;
 // import java.util.Arrays;
@@ -23,7 +20,7 @@ import java.io.ByteArrayInputStream;
         //         Scanner inputData = new Scanner(System.in);
 //         System.out.println("======> Calculate the area of a rectalage <=======");
 //         System.out.println("rumus of rectalage ====> panjang x lebar ");
-       
+
 //         System.out.print("input sequare lenght ==>>");
 //         int lenght = inputData.nextInt();
 //         System.out.print("input sequare wide ==>>");
@@ -49,7 +46,7 @@ import java.io.ByteArrayInputStream;
     //         //konfersi integer
     
     //         int a = 10;
-//         int b = 4;
+    //         int b = 4;
 //         float c = (float)a / b;
 //         System.out.printf(" %d : %d = %f\n", a, b, c);
 
@@ -63,9 +60,9 @@ import java.io.ByteArrayInputStream;
 
 // public class Main {
     //     public static void main(String[] args) {
-//         Scanner inputUser = new Scanner(System.in);
+        //         Scanner inputUser = new Scanner(System.in);
 
-//         System.out.println("masukan nilai tebakan kamu:) : ");
+        //         System.out.println("masukan nilai tebakan kamu:) : ");
 //         System.out.print("Masukan Nilai tebakan kamu ====> ");
 //         int nilaiTebakan = inputUser.nextInt();
 //         int nilaiConm = 8;
@@ -86,19 +83,19 @@ import java.io.ByteArrayInputStream;
 
 
 // public class Main {
-//     public static void main(String[] args) {
+    //     public static void main(String[] args) {
     //         int angka = 3;
-//         boolean status = true;
+    //         boolean status = true;
 //         if (status == true) {
             
     //             if (angka > 6) {
 //                 System.out.print("ni percabangan bersarang 2");
 //             } else {920146046
-//                 System.out.print("ni percabanganbersarang 2 klo false");
-//             }
-//         } else {
-//             System.out.println("ini percabangan 1 klo false");
-//         }
+    //                 System.out.print("ni percabanganbersarang 2 klo false");
+    //             }
+    //         } else {
+        //             System.out.println("ini percabangan 1 klo false");
+        //         }
 //     }
 // }
 
@@ -111,18 +108,18 @@ import java.io.ByteArrayInputStream;
 //         int hasil = (angka == 10) ? (angka * 2) : (angka / 2);
 //         System.out.print("Hasil ====>> " + hasil);
 
-        
+
 //     }
 // }
 
 
 
 // public class Main {
-
+    
     //     public static void main(String[] args) {
-//         int angka = 0;
+        //         int angka = 0;
 //         while (angka <= 10) {
-//             System.out.println("ini angka yang ke " + angka);
+    //             System.out.println("ini angka yang ke " + angka);
 //             angka++;
 //         }
 //     }
@@ -151,9 +148,9 @@ import java.io.ByteArrayInputStream;
 // }
 // import java.util.*;
 // public class Main {
-
+    
     //     public static void main(String[] args) {
-//         Scanner inputUser = new Scanner(System.in);
+        //         Scanner inputUser = new Scanner(System.in);
 //         System.out.println("ini akan menjumlahkan rentan nilai EXAMPLE  nilai awal 1 nilai akhir 5\n makan (1 + 2 + 3 + 4 + 5)");
 //         int nilaiAwal, NilaiAkhir ,total;
 //         System.out.print("masukan nilai awal ==>> ");
@@ -178,7 +175,7 @@ import java.io.ByteArrayInputStream;
 
 // public class Main {
     //     public static void main(String[] args) {
-//         // nilai fibonaci
+        //         // nilai fibonaci
 //         int f_n, f_n1, f_n2, n;
 //         Scanner inputUser = new Scanner(System.in);
 //         System.out.println("Menghitung deret fubonaci\n");
@@ -210,7 +207,7 @@ import java.io.ByteArrayInputStream;
 //         Scanner inputUser = new Scanner(System.in);
 //         int angkaPertama, angkaTerakhir;
 //         String Operator;
-        
+
 
 
 //         System.out.println("=====> INI ADALAH KALKULATOR SEDERHANA DENGAN JAVA <========");
@@ -221,20 +218,20 @@ import java.io.ByteArrayInputStream;
 //         Operator = inputUser.next();
 //         System.out.print("masukan angaka ------>>>");
 //         angkaTerakhir = inputUser.nextInt();
-        
+
 //         int Hasil;
-        
+
 //         if (Operator.equalsIgnoreCase("X") || Operator.equalsIgnoreCase("x")) {
-//             Hasil = (angkaPertama * angkaTerakhir);
-//             System.out.println("hasil nya adalah  = " + Hasil);
-//         }else if( Operator.equalsIgnoreCase("/")){
+    //             Hasil = (angkaPertama * angkaTerakhir);
+    //             System.out.println("hasil nya adalah  = " + Hasil);
+    //         }else if( Operator.equalsIgnoreCase("/")){
     //             Hasil = (angkaPertama / angkaTerakhir);
-//             System.out.println("hasil nya adalah  = " + Hasil);
-//         }else if(Operator.equalsIgnoreCase("+")){
-    //              Hasil = (angkaPertama + angkaTerakhir);
-//             System.out.println("hasil nya adalah  = " + Hasil);
+    //             System.out.println("hasil nya adalah  = " + Hasil);
+    //         }else if(Operator.equalsIgnoreCase("+")){
+        //              Hasil = (angkaPertama + angkaTerakhir);
+        //             System.out.println("hasil nya adalah  = " + Hasil);
 //         } else if (Operator.equalsIgnoreCase("-")) {
-//              Hasil = (angkaPertama - angkaTerakhir);
+    //              Hasil = (angkaPertama - angkaTerakhir);
 //             System.out.println("hasil nya adalah  = " + Hasil);
 //         }
 
@@ -253,14 +250,14 @@ import java.io.ByteArrayInputStream;
  * Main
  */
 // public class Main {
-
+    
     //     public static void main(String[] args) {
 
-//         for (int i = 0; i < 5; i++) {
+        //         for (int i = 0; i < 5; i++) {
     //                 System.out.println("+"  + i +"i");
-
+    
     //             for (int j = 0; j < 5; j++) {
-//                 System.out.println("+" + j + "j") ;
+        //                 System.out.println("+" + j + "j") ;
 //             }
 //             // System.out.println("\n");
 //         }
@@ -269,31 +266,31 @@ import java.io.ByteArrayInputStream;
 
 // public class Main {
 //     public static void main(String[] args) {
-
+    
     //         // menghitung nilai f(x) = (x + 2) * x
-//         int x, y;
+    //         int x, y;
 //         x = 10;
 //         y = hitung(x);
 //         System.out.println(y);  
 //     }
 
 //     static int hitung(int input) {
-
+    
     //         int hasil = (input + 2) * input;
-//         return hasil;
+    //         return hasil;
 
-//     }
+    //     }
 
-// }
+    // }
 
-// import java.util.*;
+    // import java.util.*;
 
-// public class Main{
+    // public class Main{
 
-//     public static void main(String[] args) {
+        //     public static void main(String[] args) {
 
     //         Scanner inputUser = new Scanner(System.in);
-
+    
 //         System.out.print("masukan panjang : ");
 //         int panjang = inputUser.nextInt();
 //         System.out.print("masukan lebar : ");
@@ -306,18 +303,18 @@ import java.io.ByteArrayInputStream;
 
 //     private static void hitungLuasDanKeliling(int panjang, int lebar) {
 
-//         System.out.println("luas nya adalah : " + luas(panjang, lebar));
+    //         System.out.println("luas nya adalah : " + luas(panjang, lebar));
 //         System.out.println("keliling nya adalah : " + keliling(lebar, panjang) );
 //     }
 
 //     private static int keliling(int lebar, int panjang) {
-//         int hasil = (panjang + lebar) * 2;
-//         return hasil;
+    //         int hasil = (panjang + lebar) * 2;
+    //         return hasil;
 //     }
 
 //     private static int luas(int panjang, int lebar) {
     //         int hasil = (panjang * lebar);
-//         return hasil;
+    //         return hasil;
 //     }
 
 //     private static void pola(int panjang, int lebar) {
@@ -334,7 +331,7 @@ import java.io.ByteArrayInputStream;
 // fungsi rekursif
 // public class Main {
 //     public static void main(String[] args) {
-//         int param = 3;
+    //         int param = 3;
 //         rekursif(param);
 //         int jumlah = hitungNilai(param);
 
@@ -343,16 +340,16 @@ import java.io.ByteArrayInputStream;
 
 //     private static int hitungNilai(int param) {
 //         if (param == 0) {
-//             return param;
-//         }
+    //             return param;
+    //         }
 //         int hasil = param + hitungNilai(param - 1);
 //         return hasil;
 //     }
-    
+
 //     private static void rekursif(int param) {
-//         System.out.println("0 <->" + param);
+    //         System.out.println("0 <->" + param);
 //         if (param == 0) {
-//             return;
+    //             return;
 //        }
 //          param--;
 //         rekursif(param);
@@ -373,11 +370,11 @@ import java.io.ByteArrayInputStream;
 //     }
 
 //     private static int fibonacci(int n, String daun) {
-//         System.out.println("daun => " + daun);
+    //         System.out.println("daun => " + daun);
 //         System.out.println("fobonacci ke => " + n);
 
 //         if (n == 0 || n == 1) {
-//             return 0; 
+    //             return 0; 
 //         }
 //         return fibonacci(n - 1, "kiri") + fibonacci(n - 2, "kanan");
 //     }
@@ -389,8 +386,8 @@ import java.io.ByteArrayInputStream;
 // public class Main {
     
     //     public static void main(String[] args) {
-//         // blajar method overload
-//         angka(10);
+        //         // blajar method overload
+        //         angka(10);
 //         angka(3.5f);
 //         angka(3.6d);
 //         System.out.println("========= PEJUMLAHAN TIPE DATA DENGAN OVERLOAD METHOD =======");
@@ -407,20 +404,20 @@ import java.io.ByteArrayInputStream;
 //         return (angka1 + angka2);
 //     }
 //     private static float penjumlahan(Float angka1,int angka2) {
-//         return (angka1 + angka2);
+    //         return (angka1 + angka2);
 //     }
 //     private static Double penjumlahan(Double angka1,int angka2) {
     //         return (angka1 + angka2);
 //     }
 
 //     private static void angka(int angka) {
-//         System.out.println("ini adalah data dengan tipe integer dengan noilai : " + angka);
-//     }
+    //         System.out.println("ini adalah data dengan tipe integer dengan noilai : " + angka);
+    //     }
 //     private static void angka(Float angka) {
     //         System.out.println("ini adalah data dengan tipe float dengan noilai : " + angka);
 //     }
 //     private static void angka(Double angka) {
-//         System.out.println("ini adalah data dengan tipe double dengan noilai : " + angka);
+    //         System.out.println("ini adalah data dengan tipe double dengan noilai : " + angka);
 //     }
 // }
 
@@ -435,11 +432,11 @@ import java.io.ByteArrayInputStream;
 //         System.out.println("array dengan loopoing for ");
 
 //         for (int i = 0; i < array.length; i++) {
-//             System.out.println("ini adalah array dengan index ke " + i + " dengan angka " + array[i]);
+    //             System.out.println("ini adalah array dengan index ke " + i + " dengan angka " + array[i]);
 //         }
 //         System.out.println("array dengan perulangan foreich");
 //         for (int valueArr : array) {
-//             System.out.println("array foreich => " + valueArr);
+    //             System.out.println("array foreich => " + valueArr);
 //         }
 
 
@@ -450,7 +447,7 @@ import java.io.ByteArrayInputStream;
 
 // public class Main {
     //     public static void main(String[] args) {
-//         int[] arrayAngka = { 1, 2, 4, 5, 6, 7, 8, 9 };
+        //         int[] arrayAngka = { 1, 2, 4, 5, 6, 7, 8, 9 };
 //         int[] arrayAngka2 = new int[9];
 //         arrayAngka2 = arrayAngka;
 
@@ -475,7 +472,7 @@ import java.io.ByteArrayInputStream;
 
 //         for (int i = 0; i < Array1.length; i++) {
     //             Array2[i] = Array1[i];
-//         }
+    //         }
 //         System.out.println(Arrays.toString(Array1));
 //         System.out.println(Arrays.toString(Array2));
 
@@ -514,10 +511,10 @@ import java.io.ByteArrayInputStream;
 //             System.out.println("Array6 dan Array7 itu sama\n");
 //         } else {
     //             System.out.println("Array6 dan Array7 itu beda");
-//         }
+    //         }
 
 //         int[] IntArray1 = {1,2,3,4,5,6};
-        
+
 //         int[] nnn = penjumlahanArray(IntArray1);
 //         System.out.println(Arrays.toString(nnn));
 //     }
@@ -525,13 +522,13 @@ import java.io.ByteArrayInputStream;
 
 
 //     private static int[] penjumlahanArray(int[] nilaiInt1) {
-        
-    //         int[] IntArray2 = Arrays.copyOf(nilaiInt1, 6);
-//         for (int i = 0; i < IntArray2.length; i++) {
     
-//         }
+    //         int[] IntArray2 = Arrays.copyOf(nilaiInt1, 6);
+    //         for (int i = 0; i < IntArray2.length; i++) {
+    
+        //         }
 
-
+        
 //     }
 // }
 
@@ -544,7 +541,7 @@ import java.io.ByteArrayInputStream;
 // import javax.sound.midi.VoiceStatus;
 
 // public class Main {
-//     public static void main(String[] args) {
+    //     public static void main(String[] args) {
     //         int[] AngkaArray1 = { 1, 2, 3, 4, 5, 6, 7, 87 };
 //         int[] AngkaArray2 = { 1, 2, 3, 4, 5, 6, 7, 87 };
 //         int[] ArrayAcak = {6,6,4,4,5,6,5,86,89,56,5};
@@ -562,7 +559,7 @@ import java.io.ByteArrayInputStream;
 //     }
 // // sort mengurutkan dari elemen int arany dari yang twrkecil
 //     private static void shortArray(int[] Array1) {
-//         print(Array1, "Array before short => ");
+    //         print(Array1, "Array before short => ");
 //         Arrays.sort(Array1);
 //         print(Array1, "Array was sorted => " );
 //     }
@@ -590,11 +587,11 @@ import java.io.ByteArrayInputStream;
     //         System.out.println(message + Arrays.toString(ArrayAngka));
         
     //     }
-// }
+    // }
+    
+    // array multi deminsi
 
-// array multi deminsi
-
-// public class Main {
+    // public class Main {
 //     public static void main(String[] args) {
     //         // array 2d
 //         int[][] Arr2d = { { 1, 2, 3, 4, 5, 6 }, { 1, 2, 3, 4, 5, 6 } };
@@ -607,7 +604,7 @@ import java.io.ByteArrayInputStream;
 //             System.out.println("\n");
 //             for (int[] collumb : array) {
     //                 System.out.println(Arrays.toString(collumb));
-//             }
+    //             }
 //         }
 //     }
 // private static void Array2d(int[][] array) {
@@ -627,7 +624,7 @@ import java.io.ByteArrayInputStream;
 //     public static void main(String[] args) {
     
     //         int[][] matrix_a = { { 1, 2, 3, 4,5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
-//         int[][] matrix_b = { { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
+    //         int[][] matrix_b = { { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 }, { 1, 2, 3, 4, 5 } };
 //         printArrayMultid(matrix_a);
 //         printArrayMultid(matrix_b);
 
@@ -637,17 +634,17 @@ import java.io.ByteArrayInputStream;
 //     }
     
 //     private static int[][] calculateArrMultid(int[][] Array1 ,int[][] array2) {
-//         int[][] resultArrMultid = new int[Array1.length][Array1[0].length];
+    //         int[][] resultArrMultid = new int[Array1.length][Array1[0].length];
 //         System.out.println("RESULT  ARRAY/MATRIX OF CALCULATE 2 ARRAY MULTI DIMENCY");
 //         if (Array1.length == array2.length && Array1[0].length == array2[0].length) {
 //             for (int i = 0; i < Array1.length; i++) {
-//                 for (int j = 0; j < Array1[0].length; j++) {
+    //                 for (int j = 0; j < Array1[0].length; j++) {
     //                     resultArrMultid[i][j] = (Array1[i][j] + array2[i][j]);
-//                 }
+    //                 }
 //             }
 //         } else {
     //             System.out.println("baris atau collomb tidak sama");
-//         }
+    //         }
 //         return resultArrMultid;
 //     }
 //     private static void printArrayMultid(int[][] Array1) {
@@ -655,15 +652,15 @@ import java.io.ByteArrayInputStream;
 //         int collumb = Array1[0].length;
 //         for (int i = 0; i < baris; i++) {
     //             System.out.print("[");
-//             for (int j = 0; j < collumb; j++) {
+    //             for (int j = 0; j < collumb; j++) {
     //                 System.out.print(Array1[i][j]);
-//                 if (j < (collumb - 1)) {
+    //                 if (j < (collumb - 1)) {
     //                     System.out.print(",");
-//                 } else {
+    //                 } else {
     //                     System.out.print("]");
-//                 }
-//             }
-//             System.out.println("\n");
+    //                 }
+    //             }
+    //             System.out.println("\n");
 //         }
 //         System.out.println("================\n");
 //     }
@@ -698,9 +695,9 @@ import java.io.ByteArrayInputStream;
 // format string
 
 // public class Main {
-//     public static void main(String[] args) {
+    //     public static void main(String[] args) {
     //         String name = "alliano";
-//         int age = 18;
+    //         int age = 18;
 //         System.out.printf("my name is %s my age is %d\n", name, age);
 
 
@@ -734,7 +731,7 @@ import java.io.ByteArrayInputStream;
 //         System.out.printf("\nFLOATING TO POINT\n");
 //         float ac1 = 100.54f;
 //         System.out.printf("%10f\n", ac1);//floating point akan mengambil width
-        
+
 
 //         // exp
 //         String nama = "allia";
@@ -756,7 +753,7 @@ import java.io.ByteArrayInputStream;
 //         // exception biasa
 //         System.out.println("\nErrhandling biasa\n");
 //         try {
-//             int result = intArr[indexOf];
+    //             int result = intArr[indexOf];
 //             System.out.println(result);
 //         } catch (Exception Errhandling) {
     //             System.out.println("========= Err Exception Biasa======\n");
@@ -768,11 +765,11 @@ import java.io.ByteArrayInputStream;
 //         // err handling with throws
 //         System.out.println("\nErrhandling with trow\n");
 //         try{
-//             int[] dataArray = {1,2,3,4,5,6,6,7,8};
+    //             int[] dataArray = {1,2,3,4,5,6,6,7,8};
 //             int result = exceptionThrow(dataArray, indexOf);
 //             System.out.println(result);
 //         } catch (Exception Errhandling) {
-//             System.out.println("========= Err Exception THROWS======\n");
+    //             System.out.println("========= Err Exception THROWS======\n");
 //             System.err.println(Errhandling);
 //         }
 //     }
@@ -781,7 +778,7 @@ import java.io.ByteArrayInputStream;
 // public class Main {
 //     public static void main(String[] args) {
     //         Scanner indexArr = new Scanner(System.in);
-//         System.out.print("cari index Array ke =>--> ");
+    //         System.out.print("cari index Array ke =>--> ");
 //         int indexOf = indexArr.nextInt();
 //         int[] intArr = { 1, 2, 3, 4, 5, 6 };
 
@@ -789,7 +786,7 @@ import java.io.ByteArrayInputStream;
 //         System.out.println("\nErrhandling biasa\n");
 //         try {
     //             int result = intArr[indexOf];
-//             System.out.println(result);
+    //             System.out.println(result);
 //         } catch (Exception Errhandling) {
 //             System.out.println("========= Err Exception Biasa======\n");
 //             System.err.println(Errhandling);
@@ -815,11 +812,11 @@ import java.io.ByteArrayInputStream;
 //     }
 
 //     private static void ErrhandlingMethodrint(int[] array,int indexOf) {
-//         try {
+    //         try {
     //             System.out.println(array[indexOf]);
-//         } catch (Exception Errhandling) {
+    //         } catch (Exception Errhandling) {
     //             System.out.println("========= Err Exception Method======\n");
-//             System.out.println(Errhandling);
+    //             System.out.println(Errhandling);
 //         }
 
 //          }
@@ -832,10 +829,10 @@ import java.io.ByteArrayInputStream;
 
 //     private static void ErrhandlingMethodrint(int[] array,int indexOf) {
     //         try {
-//             System.out.println(array[indexOf]);
+        //             System.out.println(array[indexOf]);
 //         } catch (Exception Errhandling) {
-//             System.out.println("========= Err Exception Method======\n");
-//             System.out.println(Errhandling);
+    //             System.out.println("========= Err Exception Method======\n");
+    //             System.out.println(Errhandling);
 //         }
 
 //          }
@@ -848,8 +845,8 @@ import java.io.ByteArrayInputStream;
 // import java.io.IOException;
 
 // public class Main {
-//     public static void main(String[] args) throws IOException {
-//         FileInputStream fleInput = null;
+    //     public static void main(String[] args) throws IOException {
+        //         FileInputStream fleInput = null;
 //         FileOutputStream fileOutput = null;
 //         //open the file
 //         fleInput = new FileInputStream("data.txt");
@@ -876,7 +873,7 @@ import java.io.ByteArrayInputStream;
 //             }
 //         } finally {
 //             if (fileOutput != null && fleInput != null) {
-//                 fileOutput.close();
+    //                 fileOutput.close();
 //                 fleInput.close();
 //             }
 //         }
@@ -886,46 +883,86 @@ import java.io.ByteArrayInputStream;
 // }
 
 
-import java.io.FileInputStream;
+// import java.io.FileInputStream;
+// import java.io.IOException;
+// import java.security.DrbgParameters.Reseed;
+
+
+
+
+// public class Main {
+//     public static void main(String[] args) throws IOException{
+    //         long timeStart, timeFinish;
+//         FileInputStream fileInput = new FileInputStream("data.txt");
+//         // read from the file 
+//         System.out.println(fileInput.available());//memnghitung ada berapa banyak kaarankter pada suatu file
+
+
+//         System.out.println("membaca dengan FILEINPUTSTREAM\n");
+//         // calculate time read
+//         timeStart = System.nanoTime();
+//         System.out.println(fileInput.readAllBytes());
+//         timeFinish = System.nanoTime();
+//         System.err.println("waktu : " + (timeFinish - timeStart) + "\n");
+//         fileInput.close();
+
+//         // read from memory
+//         System.out.println("membaca dari MEmory\n");
+//         FileInputStream inputfile2 = new FileInputStream("data.txt");
+//         BufferedInputStream buffer = new BufferedInputStream(inputfile2);
+
+//         buffer.mark(200);
+//         // calculate times of read
+//         timeStart = System.nanoTime();
+//         System.out.println(buffer.readAllBytes());
+//         timeFinish = System.nanoTime();
+//         System.out.println("waktu : " + (timeFinish - timeStart));
+
+
+//         // try reead
+//         buffer.reset();
+//         byte[] data = buffer.readAllBytes();
+//         String dataString = new String(data);
+//         System.out.println(dataString);
+//     }
+// }
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.ByteArrayInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
-import java.security.DrbgParameters.Reseed;
-
-
-
+import java.io.Writer;
 
 public class Main {
-    public static void main(String[] args) throws IOException{
-        long timeStart, timeFinish;
-        FileInputStream fileInput = new FileInputStream("data.txt");
-        // read from the file 
-        System.out.println(fileInput.available());//memnghitung ada berapa banyak kaarankter pada suatu file
+    public static void main(String[] args) throws IOException {
+        // read file
+        FileReader input = new FileReader("data.txt");
+        BufferedReader bufferedReader = new BufferedReader(input);//ini akan berisi data2 dari variable input .vatiable input dapat data dari data.txt
+        bufferedReader.mark(200);
 
+        // membaca kedalam string
+        String data = bufferedReader.readLine();//ini akan membaca isi buffer per baris
+        System.out.println(data);
 
-        System.out.println("membaca dengan FILEINPUTSTREAM\n");
-        // calculate time read
-        timeStart = System.nanoTime();
-        System.out.println(fileInput.readAllBytes());
-        timeFinish = System.nanoTime();
-        System.err.println("waktu : " + (timeFinish - timeStart) + "\n");
-        fileInput.close();
+        // MEMBACA KEDALAM CAr
+        bufferedReader.reset();
+        System.out.println(bufferedReader.readLine());
+        System.out.println(bufferedReader.readLine());
 
-        // read from memory
-        System.out.println("membaca dari MEmory\n");
-        FileInputStream inputfile2 = new FileInputStream("data.txt");
-        BufferedInputStream buffer = new BufferedInputStream(inputfile2);
+        // menulis file 
+        bufferedReader.reset();
+        FileWriter writer = new FileWriter("output.txt");//ini akan membuat file dengan nama output.txt
+        BufferedWriter BufferWriter = new BufferedWriter(writer);//ini akan membuka objek untuk menulis ke dalam file output.txt
 
-        buffer.mark(200);
-        // calculate times of read
-        timeStart = System.nanoTime();
-        System.out.println(buffer.readAllBytes());
-        timeFinish = System.nanoTime();
-        System.out.println("waktu : " + (timeFinish - timeStart));
+        String rows = bufferedReader.readLine();//membaca isi buffer perbaris
+        BufferWriter.write(rows, 0, rows.length());//menulis ini buffer ke dalam output.txt
+        BufferWriter.flush();//memulai menulis
+        BufferWriter.newLine();//menambahkan baris baru
 
-
-        // try reead
-        buffer.reset();
-        byte[] data = buffer.readAllBytes();
-        String dataString = new String(data);
-        System.out.println(dataString);
+        String rows2 = bufferedReader.readLine();//membaca ulang per baris
+        BufferWriter.write(rows2, 300, rows2.length());//menulis 
+        BufferWriter.flush();//mulai menulis
     }
+    
 }
