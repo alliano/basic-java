@@ -913,23 +913,189 @@ package com;
 //     }
 
 // }
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+// import java.io.BufferedReader;
+// import java.io.FileReader;
+// import java.io.IOException;
+// import java.util.Scanner;
+// import java.util.StringTokenizer;
+
+// public class Main {
+//     public static void main(String[] args) throws IOException {
+//         FileReader fileInput = new FileReader("data.txt");//membaca file dari data.txt
+//         BufferedReader bufferedReader = new BufferedReader(fileInput);//menimpan datta ke dalam memory sebelum di tulis di suatu file 
+//         Scanner scanner = new Scanner(bufferedReader);
+
+//         //menecek masih ada kata atau tidakk jika ada ini akan bernilai truee
+//         System.out.println(scanner.hasNext());
+//         //menampilkan perkata
+//         while (scanner.hasNext()) {
+//             System.out.println(scanner.next());
+//         }
+//         System.out.println("\n");
+//         System.out.println("==== delimiter ====");
+
+//         // mengunakan delimiter tertentu
+
+//         FileReader inputFile2 = new FileReader("data2.txt");
+//         BufferedReader bufferedReader2 = new BufferedReader(inputFile2);//ini akan memngambil data dari fileinput dan akan disimpan di dalam memory buffer
+//         bufferedReader2.mark(200);
+//         Scanner Scanner2 = new Scanner(bufferedReader2);//scanner akan membaca bufferrider nya
+//         Scanner2.useDelimiter(",");
+//         while (Scanner2.hasNext()) {
+//             System.out.println(Scanner2.next() + " =>  delimiter");
+//         }
+//          System.out.println("\n");
+//          System.out.println("==== mengunakian string tokenizer ====");
+        
+//         // mengunakan string TokenNizer
+//         bufferedReader2.reset();//agar memorinya kosong
+//         String data = bufferedReader2.readLine();//ini akan membaca barisnya dan data string nya
+
+//         StringTokenizer stringtokenizer = new StringTokenizer(data, ",");//delimiterr untuk setring
+//         while(stringtokenizer.hasMoreTokens()){
+//             System.out.println(stringtokenizer.nextToken());
+//         }
+        
+//         System.out.println(stringtokenizer.hasMoreTokens());//ini akan menghasilkan true jika baris masih ada dan akan menghasikan false jika barisna kosong dama seperti fungsi hashNex();
+//     }
+// }
+
 import java.util.Scanner;
+import java.util.StringTokenizer;
+import java.io.IOException;
+import java.io.FileReader;
+import java.io.BufferedReader;
+
+
+
+// project CRUD
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        FileReader fileInput = new FileReader("data.txt");//membaca file dari data.txt
-        BufferedReader bufferedReader = new BufferedReader(fileInput);//menimpan datta ke dalam memory sebelum di tulis di suatu file 
-        Scanner scanner = new Scanner(bufferedReader);
+        
+        Scanner inputUser = new Scanner(System.in);
+        // LIST FITUR
+        boolean isNext = true;
+        while (isNext) {
+            ClearScreeen();
+            System.out.println("\n ===== DATABASE IDENTYTY===== \n");
+            System.out.println("1.\tList All data");
+            System.out.println("2.\tSearch identyty");
+            System.out.println("3.\tAdd data identyty");
+            System.out.println("4.\tEdit data identyty");
+            System.out.println("5.\tDelete data identyty\n");
 
-        //menecek masih ada kata atau tidakk jika ada ini akan bernilai truee
-        System.out.println(scanner.hasNext());
-        //menampilkan perkata
-        while (scanner.hasNext()){
-            System.out.println(scanner.next());
+            System.out.print("Choice ===>>>");
+            String inputString = inputUser.next();
+
+            switch (inputString) {
+            case "1":
+                System.out.println("\tList All data Identyty");
+
+                showDatas();
+                break;
+            case "2":
+                System.out.println("Search data Identyty");
+                break;
+            case "3":
+                System.out.println("Add data Identyty");
+                break;
+            case "4":
+                System.out.println("Edit data Identyty");
+                break;
+            case "5":
+                System.out.println("Delete data Identyty");
+                break;
+
+            default:
+                System.out.println("==========================================");
+                System.out.println("kamu kek komtl masukin input kek ajg ngtd babi pepek:v");
+                System.out.println("==========================================");
+                break;
+            }
+            
+            System.out.println("\n\n\t==========================================");
+            isNext = getYorNo("\tlanjut apa kaga anjg ngentod --->> (Y/N)");
+            
+
+
+            //isNext = introgation.equalsIgnoreCase("y");//ini klo user milih y atay Y ini akan menghasilkan nilai true selain milih y akan false 
+            // if (introgation.equals("y") || introgation.equals("Y")) {
+            //     isNext = true;
+            // } else if (introgation.equals("n") || introgation.equals("N")) {
+            //     isNext = false;
+            // } else {
+            //     System.out.println("===============================================");
+            //     System.out.println("pilih yg bner ajg ngemtod babi.. anak hasilkondom bocor:v");
+            //     System.out.println("===============================================");
+            // }
+
+        }
+    }
+
+    private static void showDatas() throws IOException {
+        FileReader fileReader;
+        BufferedReader bufferedReader;
+
+        try{
+            fileReader = new FileReader("database.txt");
+            bufferedReader = new BufferedReader(fileReader);
+        } catch (Exception ERRHANDLING) {
+            System.err.println(ERRHANDLING);
+            System.err.print("identitas yg ente cari ga ada anjg komtl");
+            return;
         }
 
+        String Data = bufferedReader.readLine();
+        StringTokenizer stringTokenizer = new StringTokenizer(Data, ",");
+        System.out.println("\t==============================\n");
+        System.out.printf("\t+=========================================================================================================+");
+        System.out.println("\n\t| NO |\tTahun\t|\tPenulis\t                 |\t   Penerbit\t         |\tJudul buku\t  |");
+        System.out.printf("\t+=========================================================================================================+\n");
+        int number = 1;
+        while (Data != null) {
+            stringTokenizer.nextToken();
+            System.out.printf("\t|%2d  ", number);
+            System.out.printf("|\t%4s    ", stringTokenizer.nextToken());
+            System.out.printf("|\t%-20s     ", stringTokenizer.nextToken());
+            System.out.printf("|\t%-20s     ", stringTokenizer.nextToken());
+            System.out.printf("|\t%s     ", stringTokenizer.nextToken() + "\t  |\n");
+
+            stringTokenizer = new StringTokenizer(Data, ",");
+            Data = bufferedReader.readLine();
+            number++;
+            System.out.printf("\t+---------------------------------------------------------------------------------------------------------+\n");
+        }
+    }
+    private static Boolean getYorNo(String message) {
+        Scanner introgScanner = new Scanner(System.in);
+        String userChoice;
+        System.out.print(message);
+        userChoice = introgScanner.next();
+
+        // klao user memilih selain y/n
+
+        while (!userChoice.equalsIgnoreCase("y") && !userChoice.equalsIgnoreCase("n")) {
+            System.out.println("===============================================");
+            System.out.println("pilih yg bner ajg ngemtod babi.. anak hasilkondom bocor:v");
+            System.out.println("===============================================");
+            introgScanner = new Scanner(System.in);
+            System.out.print("Mau ualng algi apa kaga ajg:v (Y/N) -> ");
+            userChoice = introgScanner.next();
+        }
+        return userChoice.equalsIgnoreCase("y");
+
+    }
+    
+    private static void ClearScreeen() {
+        try{
+            if (System.getProperty("os.name").contains("windows")) {
+                new ProcessBuilder("cmd","/c","cls").inheritIO().start().waitFor();
+            }else{
+                System.out.print("\033\143");
+            }
+        } catch (Exception Errhandling) {
+            System.err.println("canot clear ClearScreeen " + Errhandling);
+        }
     }
 }
